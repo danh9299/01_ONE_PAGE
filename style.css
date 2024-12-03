@@ -1,0 +1,291 @@
+html {
+  font-family: "Myriad Web Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #40d4cf;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrap {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+/*Header*/
+
+.Header {
+  background-color: #e9e9e9;
+  width: 100%;
+  z-index: 100;
+  position: sticky;
+  top: 0;
+}
+
+.Header-items {
+  display: flex;
+  width: 100%;
+}
+
+.Header-items-logo {
+  width: 50%;
+  padding: 10px 40px;
+}
+
+.Header-items-logo__image {
+  width: 31px;
+  height: 25px;
+}
+
+.Header-items-navigations {
+  width: 50%;
+}
+
+.Header-items-navigations-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Header-items-navigations__item {
+  font-size: 12px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 900;
+  color: #141414;
+  text-transform: uppercase;
+}
+
+.Header-items-menu {
+  display: none;
+  font-size: 20px;
+}
+
+.Header-items__close {
+  display: none;
+  font-size: 20px;
+  z-index: 80;
+}
+
+.Header-items__modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0000001f;
+}
+
+.Header-items__modal--show {
+  display: block;
+  z-index: 60;
+}
+
+@media screen and (max-width: 1140px) {
+  .Header-items-navigations {
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    top: 0;
+    right: 0%;
+    height: 120vh;
+    width: 70%;
+    z-index: 80;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .Header-items-navigations-ul {
+    display: block;
+    overflow-y: auto;
+    max-height: 400px;
+  }
+
+  .Header-items-navigations-ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .Header-items-navigations--show {
+    display: block;
+  }
+
+  .Header-items-navigations__item {
+    display: inline-block;
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  .Header-items-menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+}
+
+.Header-items-menu__line {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  margin: 5px 0;
+  transition: 0.3s ease;
+}
+
+.Header-items-menu {
+  cursor: pointer;
+}
+
+.Header-items-menu__line:nth-child(1) {
+  transform: translateY(0);
+}
+
+.Header-items-menu__line:nth-child(2) {
+  transform: translateY(0);
+}
+
+.Header-items-menu__line:nth-child(3) {
+  transform: translateY(0);
+}
+
+.Header-items__close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  z-index: 100;
+}
+
+.Header-items__close .Header-items-menu__line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  transform-origin: center;
+  transition: 0.3s ease;
+}
+
+.Header-items__close .Header-items-menu__line:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.Header-items__close .Header-items-menu__line:nth-child(2) {
+  display: none;
+}
+
+.Header-items__close .Header-items-menu__line:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/*Banner*/
+
+.Banner {
+  height: 530px;
+  background-color: #e9e9e9;
+}
+
+.Banner .wrap {
+  position: relative;
+  height: 100%;
+}
+
+.Banner-items {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: calc(1366px / 2 - 100px);
+  margin-left: auto;
+  z-index: 1;
+}
+
+.Banner-items__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: #40d4cf;
+  font-size: 12px;
+  color: #ffffff;
+  min-width: 184px;
+  height: 54px;
+}
+
+.Banner-items__btn:hover {
+  background-color: #ffffff;
+}
+
+.Banner-items__ttl {
+  font-size: 38px;
+  font-weight: 500;
+  color: #1d1d1d;
+}
+
+.Banner-items__txt {
+  font-size: 18px;
+  font-weight: 200px;
+  color: #787878;
+}
+
+@media screen and (max-width: 1140px) {
+  .Banner-items {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Banner-items__ttl {
+    font-size: 25px;
+    margin: auto;
+  }
+  .Banner-items__txt {
+    font-size: 15px;
+    width: 70%;
+    margin: auto;
+    padding: 20px 0;
+  }
+  .Banner-items__btn {
+    width: 30%;
+    margin: auto;
+  }
+}
+
+/*About sign*/
+
+.About-items {
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+}
+
+.About-items__ttl {
+  margin: 30px auto;
+  font-size: 30px;
+  color: #1d1d1d;
+  font-family: "Montserrat";
+}
+
+.About-items__txt {
+  margin: 30px auto;
+  max-width: 50%;
+  text-align: center;
+  font-size: 16px;
+  color: #787878;
+  font-family: "Nunito Sans";
+}
+
+.About-items__sign {
+  margin: 10px auto;
+}
