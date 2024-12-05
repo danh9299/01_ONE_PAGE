@@ -62,8 +62,6 @@ function loadMoreWorkItems() {
 
 function slideShow() {
   let slideIndex = 1;
-  let startX = 0;
-  let endX = 0;
 
   showSlides(slideIndex);
 
@@ -77,55 +75,54 @@ function slideShow() {
       slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace("selected", "");
+      dots[i].className = dots[i].className.replace("Testimonials-slider-container-active__dot--selected", "");
     }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " selected";
-  }
-
-  function plusSlides(n) {
-    showSlides((slideIndex += n));
+    dots[slideIndex - 1].className += " Testimonials-slider-container-active__dot--selected";
   }
 
   function currentSlide(n) {
     showSlides((slideIndex = n));
   }
 
-  const slider = document.getElementById("slider");
-
-  slider.addEventListener("mousedown", (e) => {
-    startX = e.clientX;
-  });
-
-  slider.addEventListener("mouseup", (e) => {
-    endX = e.clientX;
-    handleSwipe();
-  });
-
-  slider.addEventListener("touchstart", (e) => {
-    startX = e.touches[0].clientX;
-  });
-
-  slider.addEventListener("touchend", (e) => {
-    endX = e.changedTouches[0].clientX;
-    handleSwipe();
-  });
-
-  function handleSwipe() {
-    const threshold = 50;
-    if (endX - startX > threshold) {
-      plusSlides(-1);
-    } else if (startX - endX > threshold) {
-      plusSlides(1);
-    }
-  }
-
   window.currentSlide = currentSlide;
 }
+
+function countNumber() {
+  const counters = document.querySelectorAll(".Numbers-items-info-descriptions__total");
+  const speed = 100;
+  const intervalTime = 3000; 
+
+  const countEffect = (counter) => {
+    const target = +counter.getAttribute("data-target");
+    counter.innerText = "0";
+
+    const updateCount = () => {
+      const count = +counter.innerText;
+      const increment = Math.ceil(target / speed);
+
+      if (count < target) {
+        counter.innerText = count + increment;
+        setTimeout(updateCount, 10);
+      } else {
+        counter.innerText = target; 
+      }
+    };
+
+    updateCount();
+  };
+
+  counters.forEach(counter => {
+    countEffect(counter);
+    setInterval(() => countEffect(counter), intervalTime);
+  });
+};
+
 
 document.addEventListener("DOMContentLoaded", () => {
   openHeaderMenu();
   showWorkItemSquare();
   loadMoreWorkItems();
   slideShow();
+  countNumber();
 });
