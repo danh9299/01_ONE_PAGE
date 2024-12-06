@@ -5,8 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>01 One Page</title>
-  <!--Style.css-->
-  <link rel="stylesheet" href="style.css" />
   <!--Myriad Font-->
   <link href="https://fonts.cdnfonts.com/css/myriad-web-pro" rel="stylesheet" />
   <!--Normalize.min.css-->
@@ -15,44 +13,46 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
   <!--Nunito sans-->
   <link href="https://fonts.googleapis.com/css?family=Nunito Sans" rel="stylesheet" />
+  <!--Style.css-->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <!--Header-->
   <header class="Header">
-    <div class="wrap">
-      <div class="Header-items">
-        <div class="Header-items-logo">
-          <img src="img/Header-logo.png" class="Header-items-logo__image" alt="" />
+    <div class="Responsive">
+      <div class="Header-item">
+        <div class="Header-item-logo">
+          <img src="img/Header-logo.png" class="Header-item-logo__image" alt="">
         </div>
-        <div class="Header-items-menu">
-          <span class="Header-items-menu__line"></span>
-          <span class="Header-items-menu__line"></span>
-          <span class="Header-items-menu__line"></span>
+        <div class="Header-item-menu">
+          <span class="Header-item-menu__line"></span>
+          <span class="Header-item-menu__line"></span>
+          <span class="Header-item-menu__line"></span>
         </div>
-        <div class="Header-items__modal"></div>
-        <div class="Header-items-navigations">
-          <ul class="Header-items-navigations-ul">
+        <div class="Header-item__modal"></div>
+        <div class="Header-item-nav">
+            <ul class="Header-item-nav-list">
             <li>
-              <a href="#" class="Header-items-navigations__item">HOME</a>
+              <a href="#" class="Header-item-nav-list__option">HOME</a>
             </li>
             <li>
-              <a href="#" class="Header-items-navigations__item">ABOUT</a>
+              <a href="#" class="Header-item-nav-list__option">ABOUT</a>
             </li>
             <li>
-              <a href="#" class="Header-items-navigations__item">WORK</a>
+              <a href="#" class="Header-item-nav-list__option">WORK</a>
             </li>
             <li>
-              <a href="#" class="Header-items-navigations__item">PROCESS</a>
+              <a href="#" class="Header-item-nav-list__option">PROCESS</a>
             </li>
             <li>
-              <a href="#" class="Header-items-navigations__item">SERVICES</a>
+              <a href="#" class="Header-item-nav-list__option">SERVICES</a>
             </li>
             <li>
-              <a href="#" class="Header-items-navigations__item">TESTIMONIALS</a>
+              <a href="#" class="Header-item-nav-list__option">TESTIMONIALS</a>
             </li>
             <li>
-              <a href="#" class="Header-items-navigations__item">CONTACT</a>
+              <a href="#" class="Header-item-nav-list__option">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -61,100 +61,92 @@
   </header>
   <!--Banner-->
   <section class="Banner">
-    <div class="wrap">
-      <div class="Banner-items">
-        <h1 class="Banner-items__ttl">We Design and Develop</h1>
-        <p class="Banner-items__txt">
+    <div class="Responsive">
+      <div class="Banner-item">
+        <h1 class="Banner-item__ttl">We Design and Develop</h1>
+        <p class="Banner-item__txt">
           We are a new design studio based in USA. We have over 20 years of
           combined experience, and know a thing or two about designing
           websites and mobile apps.
         </p>
-        <a href="" class="Banner-items__btn">CONTACT US</a>
+        <a href="" class="Banner-item__btn">CONTACT US</a>
       </div>
     </div>
   </section>
   <!--About-->
   <section class="About">
-    <div class="wrap">
-      <div class="About-items">
-        <h1 class="About-items__ttl">About Us</h1>
-        <p class="About-items__txt">
+    <div class="Responsive">
+      <div class="About-item">
+        <h2 class="About-item__ttl">About Us</h2>
+        <p class="About-item__txt">
           Divide have don't man wherein air fourth. Own itself make have night
           won't make. A you under Seed appear which good give. Own give air
           without fowl moveth dry first heaven fruit, dominion she'd won't
           very all.
         </p>
-        <img src="img/about-sign.png" alt="" class="About-items__sign" />
+        <img src="img/about-sign.png" alt="" class="About-item__sign">
       </div>
     </div>
   </section>
   <!--Skills-->
-  <section class="Skills">
-    <div class="wrap">
-      <div class="Skills-items">
-        <div class="Skills-items-content">
-          <h1 class="Skills-items-content__ttl">Professional Skills</h1>
-          <div class="Skills-items-content-progress">
-            <p class="Skills-items-content-progress__txt">UX/UI Design 75%</p>
-            <div class="Skills-items-content-progress-bar">
-              <div
-                class="Skills-items-content-progress-bar__percentage Skills-items-content-progress-bar__percentage--uxui">
-              </div>
+  <section class="Skill">
+    <div class="Responsive">
+      <div class="Skill-item">
+        <div class="Skill-item-content">
+          <h2 class="Skill-item-content__ttl">Professional Skills</h2>
+          <div class="Skill-item-content-progress">
+            <p class="Skill-item-content-progress__txt">UX/UI Design 75%</p>
+            <div class="Skill-item-content-progress-bar">
+              <p class="Skill-item-content-progress-bar__percentage Skill-item-content-progress-bar__percentage--uxui"></p>
             </div>
-            <p class="Skills-items-content-progress__txt">
-              Web Development 90%
-            </p>
-            <div class="Skills-items-content-progress-bar">
-              <div
-                class="Skills-items-content-progress-bar__percentage Skills-items-content-progress-bar__percentage--webdev">
-              </div>
+            <p class="Skill-item-content-progress__txt">Web Development 90%</p>
+            <div class="Skill-item-content-progress-bar">
+              <p class="Skill-item-content-progress-bar__percentage Skill-item-content-progress-bar__percentage--webdev"></p>
             </div>
-            <p class="Skills-items-content-progress__txt">Marketing 65%</p>
-            <div class="Skills-items-content-progress-bar">
-              <div
-                class="Skills-items-content-progress-bar__percentage Skills-items-content-progress-bar__percentage--marketing">
-              </div>
+            <p class="Skill-item-content-progress__txt">Marketing 65%</p>
+            <div class="Skill-item-content-progress-bar">
+              <p class="Skill-item-content-progress-bar__percentage Skill-item-content-progress-bar__percentage--marketing"></p>
             </div>
           </div>
         </div>
-        <div class="Skills-items__image"></div>
+        <div class="Skill-item__image"></div>
       </div>
     </div>
-  </section>
+  </section>  
   <!--Numbers-->
-  <section class="Numbers">
-    <div class="wrap">
-      <div class="Numbers-items">
-        <div class="Numbers-items-info">
-          <img src="img/numbers-items-info-projects.png" alt="" class="Numbers-items-info__images" />
-          <div class="Numbers-items-info-descriptions">
-            <p class="Numbers-items-info-descriptions__total" data-target="548">0</p>
-            <p class="Numbers-items-info-descriptions__txt">
+  <section class="Number">
+    <div class="Responsive">
+      <div class="Number-item">
+        <div class="Number-item-info">
+          <img src="img/Number-item-info-projects.png" alt="" class="Number-item-info__images">
+          <div class="Number-item-info-descriptions">
+            <p class="Number-item-info-descriptions__total" data-target="548">0</p>
+            <p class="Number-item-info-descriptions__txt">
               Projects completed
             </p>
           </div>
         </div>
-        <div class="Numbers-items-info">
-          <img src="img/numbers-items-info-hours.png" alt="" class="Numbers-items-info__images" />
-          <div class="Numbers-items-info-descriptions">
-            <p class="Numbers-items-info-descriptions__total" data-target="1465">0</p>
-            <p class="Numbers-items-info-descriptions__txt">Working Hours</p>
+        <div class="Number-item-info">
+          <img src="img/Number-item-info-hours.png" alt="" class="Number-item-info__images">
+          <div class="Number-item-info-descriptions">
+            <p class="Number-item-info-descriptions__total" data-target="1465">0</p>
+            <p class="Number-item-info-descriptions__txt">Working Hours</p>
           </div>
         </div>
-        <div class="Numbers-items-info">
-          <img src="img/numbers-items-info-feedback.png" alt="" class="Numbers-items-info__images" />
-          <div class="Numbers-items-info-descriptions">
-            <p class="Numbers-items-info-descriptions__total" data-target="612">0</p>
-            <p class="Numbers-items-info-descriptions__txt">
+        <div class="Number-item-info">
+          <img src="img/Number-item-info-feedback.png" alt="" class="Number-item-info__images">
+          <div class="Number-item-info-descriptions">
+            <p class="Number-item-info-descriptions__total" data-target="612">0</p>
+            <p class="Number-item-info-descriptions__txt">
               Positive feedbacks
             </p>
           </div>
         </div>
-        <div class="Numbers-items-info">
-          <img src="img/numbers-items-info-happy.png" alt="" class="Numbers-items-info__images" />
-          <div class="Numbers-items-info-descriptions">
-            <p class="Numbers-items-info-descriptions__total" data-target="735">0</p>
-            <p class="Numbers-items-info-descriptions__txt">Happy Clients</p>
+        <div class="Number-item-info">
+          <img src="img/Number-item-info-happy.png" alt="" class="Number-item-info__images">
+          <div class="Number-item-info-descriptions">
+            <p class="Number-item-info-descriptions__total" data-target="735">0</p>
+            <p class="Number-item-info-descriptions__txt">Happy Clients</p>
           </div>
         </div>
       </div>
@@ -162,47 +154,47 @@
   </section>
   <!--Work-->
   <section class="Work">
-    <div class="wrap">
-      <div class="Work-items">
-        <div class="Work-items-square">
-          <img src="img/work-items-square-eye.png" alt="" class="Work-items-square__eye" />
+    <div class="Responsive">
+      <div class="Work-item">
+        <div class="Work-item-square">
+          <img src="img/Work-item-square-eye.png" alt="" class="Work-item-square__eye">
         </div>
-        <div class="Work-items-square">
-          <img src="img/work-items-square-eye.png" alt="" class="Work-items-square__eye" />
+        <div class="Work-item-square">
+          <img src="img/Work-item-square-eye.png" alt="" class="Work-item-square__eye">
         </div>
-        <div class="Work-items-square">
-          <img src="img/work-items-square-eye.png" alt="" class="Work-items-square__eye" />
+        <div class="Work-item-square">
+          <img src="img/Work-item-square-eye.png" alt="" class="Work-item-square__eye">
         </div>
-        <div class="Work-items-square">
-          <img src="img/work-items-square-eye.png" alt="" class="Work-items-square__eye" />
-        </div>
-      </div>
-      <div class="Work-items Work-items--reverse">
-        <div class="Work-items-square">
-          <img src="img/work-items-square-eye.png" alt="" class="Work-items-square__eye" />
-        </div>
-        <div class="Work-items-square">
-          <img src="img/work-items-square-eye.png" alt="" class="Work-items-square__eye" />
-        </div>
-        <div class="Work-items-square">
-          <img src="img/work-items-square-eye.png" alt="" class="Work-items-square__eye" />
-        </div>
-        <div class="Work-items-square">
-          <img src="img/work-items-square-eye.png" alt="" class="Work-items-square__eye" />
+        <div class="Work-item-square">
+          <img src="img/Work-item-square-eye.png" alt="" class="Work-item-square__eye">
         </div>
       </div>
-      <div class="Work-items Work-items--hidden">
-        <div class="Work-items-square">
-          <img src="img/work-items-square-eye.png" alt="" class="Work-items-square__eye" />
+      <div class="Work-item Work-item--reverse">
+        <div class="Work-item-square">
+          <img src="img/Work-item-square-eye.png" alt="" class="Work-item-square__eye">
         </div>
-        <div class="Work-items-square">
-          <img src="img/work-items-square-eye.png" alt="" class="Work-items-square__eye" />
+        <div class="Work-item-square">
+          <img src="img/Work-item-square-eye.png" alt="" class="Work-item-square__eye">
         </div>
-        <div class="Work-items-square">
-          <img src="img/work-items-square-eye.png" alt="" class="Work-items-square__eye" />
+        <div class="Work-item-square">
+          <img src="img/Work-item-square-eye.png" alt="" class="Work-item-square__eye">
         </div>
-        <div class="Work-items-square">
-          <img src="img/work-items-square-eye.png" alt="" class="Work-items-square__eye" />
+        <div class="Work-item-square">
+          <img src="img/Work-item-square-eye.png" alt="" class="Work-item-square__eye">
+        </div>
+      </div>
+      <div class="Work-item Work-item--hidden">
+        <div class="Work-item-square">
+          <img src="img/Work-item-square-eye.png" alt="" class="Work-item-square__eye">
+        </div>
+        <div class="Work-item-square">
+          <img src="img/Work-item-square-eye.png" alt="" class="Work-item-square__eye">
+        </div>
+        <div class="Work-item-square">
+          <img src="img/Work-item-square-eye.png" alt="" class="Work-item-square__eye">
+        </div>
+        <div class="Work-item-square">
+          <img src="img/Work-item-square-eye.png" alt="" class="Work-item-square__eye">
         </div>
       </div>
       <div class="Work-modal">
@@ -210,109 +202,109 @@
       </div>
       <div class="Work__content"></div>
       <div class="Work-loadmore">
-        <h1 class="Work-loadmore__ttl">Load More Work</h1>
+        <h2 class="Work-loadmore__ttl">Load More Work</h2>
       </div>
     </div>
   </section>
   <!--Work Process-->
-  <section class="About Work-process">
-    <div class="wrap">
-      <div class="About-items Work-process-items">
-        <h1 class="About-items__ttl Work-process__ttl">Our Work Process</h1>
-        <p class="About-items__txt Work-process__txt">
+  <section class="Work-process">
+    <div class="Responsive">
+      <div class="Work-process-item">
+        <h2 class="Work-process-item__ttl">Our Work Process</h2>
+        <p class="Work-process-item__txt">
           Was years it seasons was there form he in in them together over
           that, third sixth gathered female creeping bearing behold years.
         </p>
       </div>
       <div class="Work-process-video">
         <div class="Work-process-video-circle">
-          <img src="img/work-process-video-circle-play.png" class="Work-process-video-circle__play" alt="" />
+          <img src="img/work-process-video-circle-play.png" class="Work-process-video-circle__play" alt="">
         </div>
       </div>
     </div>
   </section>
   <!--Services-->
   <section class="Services">
-    <div class="wrap">
-      <div class="Services-items">
-        <div class="Services-items-info">
-          <img src="img/services-items-info-diamond.png" alt="" class="Services-items-info__images" />
-          <div class="Services-items-info-descriptions">
-            <p class="Services-items-info-descriptions__total">
+    <div class="Responsive">
+      <div class="Service-item">
+        <div class="Service-item-info">
+          <img src="img/Service-item-info-diamond.png" alt="" class="Service-item-info__images">
+          <div class="Service-item-info-descriptions">
+            <p class="Service-item-info-descriptions__total">
               UX/UI Design
             </p>
-            <p class="Services-items-info-descriptions__txt">
+            <p class="Service-item-info-descriptions__txt">
               Be set fourth land god darkness make it wherein own
             </p>
           </div>
         </div>
-        <div class="Services-items-info">
-          <img src="img/services-items-info-arrow.png" alt="" class="Services-items-info__images" />
-          <div class="Services-items-info-descriptions">
-            <p class="Services-items-info-descriptions__total">
+        <div class="Service-item-info">
+          <img src="img/Service-item-info-arrow.png" alt="" class="Service-item-info__images">
+          <div class="Service-item-info-descriptions">
+            <p class="Service-item-info-descriptions__total">
               WEB Development
             </p>
-            <p class="Services-items-info-descriptions__txt">
+            <p class="Service-item-info-descriptions__txt">
               A she'd them bring void moving third she'd kind fill
             </p>
           </div>
         </div>
-        <div class="Services-items-info">
-          <img src="img/services-items-info-phone.png" alt="" class="Services-items-info__images" />
-          <div class="Services-items-info-descriptions">
-            <p class="Services-items-info-descriptions__total">App/Mobile</p>
-            <p class="Services-items-info-descriptions__txt">
+        <div class="Service-item-info">
+          <img src="img/Service-item-info-phone.png" alt="" class="Service-item-info__images">
+          <div class="Service-item-info-descriptions">
+            <p class="Service-item-info-descriptions__total">App/Mobile</p>
+            <p class="Service-item-info-descriptions__txt">
               Dominion man second spirit he, earth they're creeping
             </p>
           </div>
         </div>
-        <div class="Services-items-info">
-          <img src="img/services-items-info-game.png" alt="" class="Services-items-info__images" />
-          <div class="Services-items-info-descriptions">
-            <p class="Services-items-info-descriptions__total">Game Design</p>
-            <p class="Services-items-info-descriptions__txt">
+        <div class="Service-item-info">
+          <img src="img/Service-item-info-game.png" alt="" class="Service-item-info__images">
+          <div class="Service-item-info-descriptions">
+            <p class="Service-item-info-descriptions__total">Game Design</p>
+            <p class="Service-item-info-descriptions__txt">
               Morning his saying moveth it multiply appear life be
             </p>
           </div>
         </div>
-        <div class="Services-items-info">
-          <img src="img/services-items-info-airplane.png" alt="" class="Services-items-info__images" />
-          <div class="Services-items-info-descriptions">
-            <p class="Services-items-info-descriptions__total">
+        <div class="Service-item-info">
+          <img src="img/Service-item-info-airplane.png" alt="" class="Service-item-info__images">
+          <div class="Service-item-info-descriptions">
+            <p class="Service-item-info-descriptions__total">
               Seo / marketing
             </p>
-            <p class="Services-items-info-descriptions__txt">
+            <p class="Service-item-info-descriptions__txt">
               Give won't after land fill creeping meat you, may
             </p>
           </div>
         </div>
-        <div class="Services-items-info">
-          <img src="img/services-items-info-star.png" alt="" class="Services-items-info__images" />
-          <div class="Services-items-info-descriptions">
-            <p class="Services-items-info-descriptions__total">Photography</p>
-            <p class="Services-items-info-descriptions__txt">
+        <div class="Service-item-info">
+          <img src="img/Service-item-info-star.png" alt="" class="Service-item-info__images">
+          <div class="Service-item-info-descriptions">
+            <p class="Service-item-info-descriptions__total">Photography</p>
+            <p class="Service-item-info-descriptions__txt">
               Creepeth one seas cattle grass give moving saw give
             </p>
           </div>
         </div>
-        <div class="Services-items-info">
-          <img src="img/services-items-info-wand.png" alt="" class="Services-items-info__images" />
-          <div class="Services-items-info-descriptions">
-            <p class="Services-items-info-descriptions__total">
+        <div class="Service-item-info">
+          <img src="img/Service-item-info-wand.png" alt="" class="Service-item-info__images">
+          <div class="Service-item-info-descriptions">
+            <p class="Service-item-info-descriptions__total">
               Graphic design
             </p>
-            <p class="Services-items-info-descriptions__txt">
+            <p class="Service-item-info-descriptions__txt">
               Open, great whales air rule for, fourth life whales
             </p>
           </div>
         </div>
-        <div class="Services-items-info">
-          <img src="img/services-items-info-paint.png" alt="" class="Services-items-info__images" />
-          <div class="Services-items-info-descriptions">
-            <p class="Services-items-info-descriptions__total">
+        <div class="Service-item-info">
+          <img src="img/Service-item-info-paint.png" alt="" class="Service-item-info__images">
+          <div class="Service-item-info-descriptions">
+            <p class="Service-item-info-descriptions__total">
               Illustrations
             </p>
-            <p class="Services-items-info-descriptions__txt">
+            <p class="Service-item-info-descriptions__txt">
               Whales likeness hath, man kind for them air two won't
             </p>
           </div>
@@ -321,157 +313,157 @@
     </div>
   </section>
   <!--Testimonials-->
-  <section class="Testimonials">
-    <div class="wrap">
-      <div class="Testimonials-slider-container" id="slider">
-        <div class="Testimonials-slider-container-slider">
-          <h1 class="Testimonials-slider-container-slider__quote">
+  <section class="Testimonial">
+    <div class="Responsive">
+      <div class="Testimonial-slider-container" id="slider">
+        <div class="Testimonial-slider-container-content">
+          <h2 class="Testimonial-slider-container-content__quote">
             “Outstanding job and exceeded all expectations. It was a pleasure
             to work with them on a sizable first project and am looking
             forward to start the next one asap.”
-          </h1>
-          <p class="Testimonials-slider-container-slider__author">
+          </h2>
+          <p class="Testimonial-slider-container-content__author">
             Michael Hopkins
           </p>
         </div>
-        <div class="Testimonials-slider-container-slider">
-          <h1 class="Testimonials-slider-container-slider__quote">
+        <div class="Testimonial-slider-container-content">
+          <h2 class="Testimonial-slider-container-content__quote">
             “Give me six hours to chop down a tree and I will spend the first
             four sharpening the axe.”
-          </h1>
-          <p class="Testimonials-slider-container-slider__author">
+          </h2>
+          <p class="Testimonial-slider-container-content__author">
             Abraham Lincoln
           </p>
         </div>
-        <div class="Testimonials-slider-container-slider">
-          <h1 class="Testimonials-slider-container-slider__quote">
+        <div class="Testimonial-slider-container-content">
+          <h2 class="Testimonial-slider-container-content__quote">
             “Obstacles are those frightful things you see when you take your
             eyes off your goal.”
-          </h1>
-          <p class="Testimonials-slider-container-slider__author">
+          </h2>
+          <p class="Testimonial-slider-container-content__author">
             Henry Ford
           </p>
         </div>
-        <div class="Testimonials-slider-container-active">
-          <span class="Testimonials-slider-container-active__dot" onclick="currentSlide(1)"></span>
-          <span class="Testimonials-slider-container-active__dot" onclick="currentSlide(2)"></span>
-          <span class="Testimonials-slider-container-active__dot" onclick="currentSlide(3)"></span>
+        <div class="Testimonial-slider-container-active">
+          <span class="Testimonial-slider-container-active__dot" onclick="currentSlide(1)"></span>
+          <span class="Testimonial-slider-container-active__dot" onclick="currentSlide(2)"></span>
+          <span class="Testimonial-slider-container-active__dot" onclick="currentSlide(3)"></span>
         </div>
       </div>
     </div>
   </section>
   <!--Clients-->
-  <section class="Clients">
-    <div class="wrap">
-      <div class="Clients-items">
-        <div class="Clients-items-image">
-          <img src="img/clients-items-image-handmade.png" alt="" />
+  <section class="Client">
+    <div class="Responsive">
+      <div class="Client-item">
+        <div class="Client-item-image">
+          <img src="img/Client-item-image-handmade.png" alt="">
         </div>
-        <div class="Clients-items-image">
-          <img src="img/clients-items-image-mountain.png" alt="" />
+        <div class="Client-item-image">
+          <img src="img/Client-item-image-mountain.png" alt="">
         </div>
-        <div class="Clients-items-image">
-          <img src="img/clients-items-image-collection.png" alt="" />
+        <div class="Client-item-image">
+          <img src="img/Client-item-image-collection.png" alt="">
         </div>
-        <div class="Clients-items-image">
-          <img src="img/clients-items-image-vintagehandmade.png" alt="" />
+        <div class="Client-item-image">
+          <img src="img/Client-item-image-vintagehandmade.png" alt="">
         </div>
-        <div class="Clients-items-image">
-          <img src="img/clients-items-image-mountainbike.png" alt="" />
+        <div class="Client-item-image">
+          <img src="img/Client-item-image-mountainbike.png" alt="">
         </div>
       </div>
     </div>
   </section>
   <!--Form-->
   <section class="Form">
-    <div class="wrap">
-      <div class="Form-items">
-        <h1 class="Form-items__ttl">Need a Project?</h1>
-        <p class="Form-items__txt">
+    <div class="Responsive">
+      <div class="Form-item">
+        <h2 class="Form-item__ttl">Need a Project?</h2>
+        <p class="Form-item__txt">
           Let us know what you're looking for in an agency. We'll take a look
           and see if this could be the start of something beautiful.
         </p>
-        <form action="" class="Form-items-register">
-          <div class="Form-items-register-info">
-            <div class="Form-items-register-info__name">
-              <input class="" type="text" placeholder="Your Name" />
+        <form action="" class="Form-item-register">
+          <div class="Form-item-register-info">
+            <div class="Form-item-register-info__name">
+              <input  type="text" placeholder="Your Name" />
             </div>
-            <div class="Form-items-register-info__email">
-              <input class="" type="text" placeholder="Your Email" />
+            <div class="Form-item-register-info__email">
+              <input  type="text" placeholder="Your Email" />
             </div>
           </div>
-          <div class="Form-items-register-content">
-            <div class="Form-items-register-content__title">
-              <input class="" type="text" placeholder="Your Title" />
+          <div class="Form-item-register-content">
+            <div class="Form-item-register-content__title">
+              <input  type="text" placeholder="Your Title" />
             </div>
-            <div class="Form-items-register-content__comment">
-              <input class="" type="text" placeholder="Your Comment" />
+            <div class="Form-item-register-content__comment">
+              <input  type="text" placeholder="Your Comment" />
             </div>
           </div>
         </form>
-        <a href="" class="Banner-items__btn Form-items__btn">Send message</a>
+        <a class="Banner-item__btn Form-item__btn">Send message</a>
       </div>
     </div>
   </section>
-  <!--Footer-items-->
-  <footer class="Footer-items">
-    <div class="wrap">
-      <div class="Footer-items">
-        <div class="Footer-items-copyright">
-          <h3 class="Footer-items-copyright__company">Piroll Design. Inc.</h3>
-          <p3 class="Footer-items-copyright__design">© 2017 Piroll. All rights reserved. Designed by robirurk.</p3>
+  <!--Footer-item-->
+  <footer class="Footer">
+    <div class="Responsive">
+      <div class="Footer-item">
+        <div class="Footer-item-copyright">
+          <h3 class="Footer-item-copyright__company">Piroll Design. Inc.</h3>
+          <p class="Footer-item-copyright__design">© 2017 Piroll. All rights reserved. Designed by robirurk.</p>
         </div>
-        <div class="Footer-items-contact">
-          <ul class="Footer-items-contact-group">
-            <li class="Footer-items-contact-group-item">
-              <a href="#" class="Footer-items-contact-group-item__link">hello@pirolltheme.com</a>
+        <div class="Footer-item-contact">
+          <ul class="Footer-item-contact-group">
+            <li class="Footer-item-contact-group-content">
+              <a href="#" class="Footer-item-contact-group-content__link">hello@pirolltheme.com</a>
             </li>
-            <li class="Footer-items-contact-group-item">
-              <a href="#" class="Footer-items-contact-group-item__link">+44 987 065 908</a>
+            <li class="Footer-item-contact-group-content">
+              <a href="#" class="Footer-item-contact-group-content__link">+44 987 065 908</a>
             </li>
           </ul>
         </div>
-        <div class="Footer-items-work">
-          <ul class="Footer-items-work-group">
-            <li class="Footer-items-work-group-item">
-              <a href="#" class="Footer-items-work-group-item__link">Projects</a>
+        <div class="Footer-item-work">
+          <ul class="Footer-item-work-group">
+            <li class="Footer-item-work-group-content">
+              <a href="#" class="Footer-item-work-group-content__link">Projects</a>
             </li>
-            <li class="Footer-items-work-group-item">
-              <a href="#" class="Footer-items-work-group-item__link">About</a>
+            <li class="Footer-item-work-group-content">
+              <a href="#" class="Footer-item-work-group-content__link">About</a>
             </li>
-            <li class="Footer-items-work-group-item">
-              <a href="#" class="Footer-items-work-group-item__link">Services</a>
+            <li class="Footer-item-work-group-content">
+              <a href="#" class="Footer-item-work-group-content__link">Services</a>
             </li>
-            <li class="Footer-items-work-group-item">
-              <a href="#" class="Footer-items-work-group-item__link">Carreer</a>
-            </li>
-          </ul>
-          <ul class="Footer-items-work-group">
-            <li class="Footer-items-work-group-item">
-              <a href="#" class="Footer-items-work-group-item__link">News</a>
-            </li>
-            <li class="Footer-items-work-group-item">
-              <a href="#" class="Footer-items-work-group-item__link">Events</a>
-            </li>
-            <li class="Footer-items-work-group-item">
-              <a href="#" class="Footer-items-work-group-item__link">Contact</a>
-            </li>
-            <li class="Footer-items-work-group-item">
-              <a href="#" class="Footer-items-work-group-item__link">Legals</a>
+            <li class="Footer-item-work-group-content">
+              <a href="#" class="Footer-item-work-group-content__link">Carreer</a>
             </li>
           </ul>
-          <ul class="Footer-items-work-group">
-            <li class="Footer-items-work-group-item">
-              <a href="#" class="Footer-items-work-group-item__link">Facebook</a>
+          <ul class="Footer-item-work-group">
+            <li class="Footer-item-work-group-content">
+              <a href="#" class="Footer-item-work-group-content__link">News</a>
             </li>
-            <li class="Footer-items-work-group-item">
-              <a href="#" class="Footer-items-work-group-item__link">Twitter</a>
+            <li class="Footer-item-work-group-content">
+              <a href="#" class="Footer-item-work-group-content__link">Events</a>
             </li>
-            <li class="Footer-items-work-group-item">
-              <a href="#" class="Footer-items-work-group-item__link">Instagram</a>
+            <li class="Footer-item-work-group-content">
+              <a href="#" class="Footer-item-work-group-content__link">Contact</a>
             </li>
-            <li class="Footer-items-work-group-item">
-              <a href="#" class="Footer-items-work-group-item__link">Dribble</a>
+            <li class="Footer-item-work-group-content">
+              <a href="#" class="Footer-item-work-group-content__link">Legals</a>
+            </li>
+          </ul>
+          <ul class="Footer-item-work-group">
+            <li class="Footer-item-work-group-content">
+              <a href="#" class="Footer-item-work-group-content__link">Facebook</a>
+            </li>
+            <li class="Footer-item-work-group-content">
+              <a href="#" class="Footer-item-work-group-content__link">Twitter</a>
+            </li>
+            <li class="Footer-item-work-group-content">
+              <a href="#" class="Footer-item-work-group-content__link">Instagram</a>
+            </li>
+            <li class="Footer-item-work-group-content">
+              <a href="#" class="Footer-item-work-group-content__link">Dribble</a>
             </li>
           </ul>
         </div>
