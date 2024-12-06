@@ -145,11 +145,10 @@ function countNumber() {
     };
 
     const observer = new IntersectionObserver(
-      (entries, observer) => {
+      (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             countEffect(entry.target);
-            observer.unobserve(entry.target);
           }
         });
       },
